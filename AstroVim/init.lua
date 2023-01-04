@@ -120,7 +120,7 @@ local config = {
       lightspeed = false,
       ["neo-tree"] = false,
       notify = true,
-      ["nvim-tree"] = false,
+      ["nvim-tree"] = true,
       ["nvim-web-devicons"] = true,
       rainbow = true,
       symbols_outline = false,
@@ -218,29 +218,35 @@ local config = {
       -- ["<esc>"] = false,
     },
   },
-require("nvim-tree").setup({
-  sort_by = "case_sensitive",
-  view = {
-    adaptive_size = true,
-    mappings = {
-      list = {
-        { key = "u", action = "dir_up" },
+
+  require("nvim-tree").setup({ -- nvim-tree/nvim-tree.lua
+    sort_by = "case_sensitive",
+    view = {
+      adaptive_size = true,
+      mappings = {
+        list = {
+          { key = "u", action = "dir_up" },
+        },
       },
     },
-  },
-  renderer = {
-    group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
-  },
-}),
+    renderer = {
+      group_empty = true,
+    },
+    filters = {
+      dotfiles = true,
+    },
+  }),
+
+  require("flutter-tools").setup{}, -- akinsho/flutter-tools.nvim
+
   -- Configure plugins
   plugins = {
     init = {
-     ["nvim-neo-tree/neo-tree.nvim"] = { disabled = true },
+     ["nvim-neo-tree/neo-tree.nvim"] = { disable = true },
      "morhetz/gruvbox", 
      "nvim-tree/nvim-tree.lua", 
+     "nvim-lua/plenary.nvim", 
+     "akinsho/flutter-tools.nvim",
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
 
