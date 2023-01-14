@@ -28,7 +28,7 @@ local config = {
         },
 
         -- Set colorscheme to use
-        colorscheme = "gruvbox",
+        colorscheme = "gruvbox-material",
 
         -- Add highlight groups in any theme
         highlights = {
@@ -311,12 +311,13 @@ local config = {
                         ["nvim-neo-tree/neo-tree.nvim"] = { disable = true },
                         ["rebelot/heirline.nvim"] = { disable = true },
                         ["rcarriga/nvim-notify"] = { disable = true },
-                        "morhetz/gruvbox",
+                        ["morhetz/gruvbox"] = { disable = true },
                         "nvim-tree/nvim-tree.lua",
                         "nvim-lua/plenary.nvim",
                         "akinsho/flutter-tools.nvim",
                         "andweeb/presence.nvim",
                         "nvim-lualine/lualine.nvim",
+                        "sainnhe/gruvbox-material",
                         -- You can disable default plugins as follows:
                         -- ["goolord/alpha-nvim"] = { disable = true },
 
