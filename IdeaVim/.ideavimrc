@@ -1,47 +1,71 @@
-       set number relativenumber
-       set idearefactormode=keep
-       set ideajoin
-       set surround
-       set easymotion
-       
-       let mapleader = " "
-       
-       noremap <Esc> <nop>
-       imap <S-q> <Esc>
-       nmap <S-Enter> O<Esc>
-       nmap <CR> o<Esc>
-       
-       nnoremap <c-j> :m +1<cr>
-       nnoremap <C-k> :m -2<CR>
-       nnoremap <S-a> :NERDTree<CR>
-       inoremap <C-j> <Esc>:m +1<CR>gi
-       inoremap <C-k> <Esc>:m -2<CR>gi
-       
-       " system clipboard
-       vmap <leader>y "+y
-       vmap <leader>d "+d
-       nmap <leader>y "+yy
-       nmap <leader>p "+p
-       nmap <leader>P "+P
-       vmap <leader>p "+p
-       vmap <leader>P "+P
-       
-       " scrolling
-       nmap <leader>d <C-d>
-       nmap <leader>u <C-u>
-       vmap <leader>d <C-d>
-       vmap <leader>u <C-u>
-       
-       " actions
-       nmap <S-h> <action>(PreviousTab)
-       nmap <S-l> <action>(NextTab)
-       nmap <leader>bd <action>(CloseEditor)
-       nmap <S-g> <action>(Generate)
-       nmap <leader>m <action>(Git.Menu)
-       nmap <leader>s <action>(QuickChangeScheme)
-       nmap <leader>/ <action>(ShowErrorDescription)
-       nnoremap <leader><leader> <C-Tab>
-       
-       set NERDTree
-       let g:NERDTreeMapActivateNode='l'
-       let g:NERDTreeMapJumpParent='h'
+set number relativenumber
+set idearefactormode=keep
+set ideajoin
+set surround
+set easymotion
+
+let mapleader = " "
+
+noremap <Esc> <nop>
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
+
+nnoremap <c-j> :m +1<cr>
+nnoremap <C-k> :m -2<CR>
+nnoremap <M-f> :NERDTree<CR>
+inoremap <C-j> <Esc>:m +1<CR>gi
+inoremap <C-k> <Esc>:m -2<CR>gi
+
+" system clipboard
+vmap <leader>y "+y
+vmap <leader>d "+d
+nmap <leader>y "+yy
+nmap <leader>p "+p
+nmap <leader>P "+P
+vmap <leader>p "+p
+vmap <leader>P "+P
+
+" scrolling
+nmap <leader>d <C-d>
+nmap <leader>u <C-u>
+vmap <leader>d <C-d>
+vmap <leader>u <C-u>
+
+" actions
+nmap <S-h> <action>(PreviousTab)
+nmap <S-l> <action>(NextTab)
+nmap <leader>c <action>(CloseEditor)
+nmap <leader>m <action>(Git.Menu)
+nmap <leader>s <action>(QuickChangeScheme)
+nmap <leader>/ <action>(ShowErrorDescription)
+nnoremap ge :action GotoNextError<CR>
+nnoremap <leader><leader> <C-Tab>
+
+set NERDTree
+let g:NERDTreeMapActivateNode='o'
+let g:NERDTreeMapJumpParent='h'
+let g:NERDTreeMapQuit='c'
+
+" russian keyboard setup
+exmap back obcommand app:go-back
+nmap <C-o> :back
+exmap forward obcommand app:go-forward
+nmap <C-i> :forward
+
+map й q
+map ц w
+map у e
+map к r
+map е t
+map н y
+map г u
+map ш i
+map щ o
+map з p
+map х [
+map ъ ]
+map ф a
+map ы s
+map в d
+map а f
+map п g
