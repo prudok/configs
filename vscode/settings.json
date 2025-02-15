@@ -1,31 +1,49 @@
 {
     "security.workspace.trust.untrustedFiles": "open",
     "explorer.confirmDelete": false,
+    "glsllint.glslangValidatorPath": "/Users/roman/glslang/bin/glslangValidator",
+    "eslint.lintTask.enable": true,
     "explorer.confirmDragAndDrop": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "vim.handleKeys": {
-        "<C-n>": false,
+      "g e": false,
+      "<C-n>": false
     },
-    "npm.exclude": "",
-    "editor.fontSize": 14.5,
+    "editor.fontSize": 15,
     "editor.lineNumbers": "relative",
     "nerdtree.hideSidebarWhenOpenFile": false,
-    "dart.previewFlutterUiGuides": true,
-    "dart.previewFlutterUiGuidesCustomTracking": true,
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [],
-        "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+  "dart.flutterSdkPath": "/Users/roman/fvm/default/bin",
+  "dart.sdkPath": "/Users/roman/fvm/default/bin/dart",
+    "search.exclude": {
+      "**/.*": true,
+      "**/.gitignore": true,
+      "**/.fvm": true,
+      "**/.dart_tools": true,
+      "build/": true
     },
-    "editor.formatOnSave": true,
+    "files.watcherExclude": {
+      "**/.fvm": true,
+      "**/.dart_tools": true,
+      "**/build": true
+    },
+    "dart.previewFlutterUiGuides": false,
+    "dart.previewFlutterUiGuidesCustomTracking": false,
+    "[dart]": {
+      "editor.formatOnType": false,
+      "editor.rulers": [120],
+      "editor.selectionHighlight": false,
+      "editor.suggestSelection": "first",
+      "editor.tabCompletion": "onlySnippets",
+      "editor.wordBasedSuggestions": "off",
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+      },
+      "editor.suggest.snippetsPreventQuickSuggestions": true
+    },
     "editor.fontLigatures": true,
     "[python]": {
-        "editor.formatOnType": true
+      "editor.formatOnType": true
     },
     "dart.flutterHotReloadOnSave": "allIfDirty",
     "dart.hotReloadOnSave": "allIfDirty",
@@ -37,11 +55,10 @@
     "vim.commandLineModeKeyBindings": [],
     "json.schemas": [],
     "editor.renderWhitespace": "none",
-    "editor.minimap.size": "fill",
     "editor.scrollbar.horizontal": "hidden",
     "editor.scrollbar.vertical": "hidden",
     "editor.overviewRulerBorder": false,
-    "dart.debugExternalPackageLibraries": false,
+    "dart.debugExternalPackageLibraries": true,
     "dart.debugSdkLibraries": false,
     "debug.disassemblyView.showSourceCode": false,
     "debug.inlineValues": "on",
@@ -51,44 +68,374 @@
     "editor.unicodeHighlight.invisibleCharacters": false,
     "workbench.startupEditor": "none",
     "themeswitcher.utcOffset": 3,
-    "themeswitcher.mappings": [
-        {
-            "time": "06:00",
-            "theme": "Dark Modern"
-        },
-        {
-            "time": "18:00",
-            "theme": "Xcode Classic Dark"
-        }
-    ],
-    "workbench.iconTheme": "helium-icon-theme",
+    "workbench.iconTheme": "material-icon-theme",
     "scm.inputFontSize": 14,
-    "chat.editor.fontSize": 14,
-    "explorer.autoReveal": false,
+    "chat.editor.fontSize": 15,
     "git.confirmSync": false,
     "editor.guides.bracketPairs": true,
     "editor.renderControlCharacters": false,
     "terminal.integrated.fontSize": 14,
     "debug.console.fontSize": 14,
     "debug.enableStatusBarColor": false,
-    "dart.lineLength": 120,
-    "dart.enableSnippets": false,
+    "dart.enableSnippets": true,
     "dart.warnWhenEditingFilesOutsideWorkspace": false,
     "workbench.layoutControl.enabled": false,
     "window.commandCenter": false,
-    "breadcrumbs.enabled": false,
-    "workbench.colorTheme": "Dark Modern",
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.enabled": false,
     "apc.activityBar": {
-        "position": "bottom",
+      "position": "bottom"
     },
     "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
+      "vscodevim.vim": 1
     },
+    "extensionDependencies": ["vscode.git"],
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-}
+    "editor.accessibilitySupport": "off",
+    "bitoAI.codeCompletion.setAutoCompletionTriggerLogic": 250,
+    "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+    "lldb.launch.expressions": "native",
+    "editor.stickyScroll.enabled": true,
+    "extensions.ignoreRecommendations": true,
+    "svg.preview.mode": "svg",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "never"
+      }
+    },
+    "[xml]": {
+      "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "gitlens.advanced.messages": {
+      "suppressLineUncommittedWarning": true
+    },
+    "[yaml]": {
+      "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "GitCommitPlugin.ShowEmoji": false,
+    "GitCommitPlugin.MaxSubjectCharacters": 50,
+    "git.mergeEditor": true,
+    "tabnine.experimentalAutoImports": true,
+    "CodeGPT.apiKey": "OpenAI",
+    "chatgpt.lang": "en",
+    "codium.editorButton": false,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "cody.autocomplete.enabled": false,
+    "workbench.activityBar.location": "top",
+    "http.proxyAuthorization": null,
+    "refactai.addressURL": "Refact",
+    "refactai.apiKey": "emyGIGERmwwLNDKZoIb6WxDo",
+    "refactai.pauseCompletion": true,
+    "refactai.telemetryCodeSnippets": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "codeium.enableConfig": {
+      "*": true,
+      "autocomplete": false,
+      "dart": false
+    },
+    "codeium.enableExplainProblem": false,
+    "search.followSymlinks": false,
+    "files.exclude": {
+      "**/.dart_tools": true,
+      "**/.flutter-plugins*": true,
+      "**/.dart_tool": true,
+      "**/.idea": true,
+      "**/.ci": true
+    },
+    "editor.fontFamily": "Fira Code",
+    "[swift]": {
+      "editor.defaultFormatter": "vknabel.vscode-apple-swift-format"
+    },
+    "[kotlin]": {
+      "editor.defaultFormatter": "fwcd.kotlin"
+    },
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false,
+    "accessibility.signals.lineHasError": {
+      "sound": "off"
+    },
+    "accessibility.signals.lineHasFoldedArea": {
+      "sound": "off"
+    },
+    "accessibility.signals.noInlayHints": {
+      "sound": "off"
+    },
+    "ai.prompts": {
+      "docs": "Просмотри выделенный код на отстуствие документации каждого класса, конструктора, поля или метода, добавь комментарий в 2-4 слова, пиши комментарий ТОЛЬКО по стилю комментариев в коде(сначала пишешь '///', предложение с большой буквы, а в конце ставишь точку '.'):  Пиши на русском, старайся максимально просто объяснить код. Добавляй только комментарии, ничего удалить и изменять кроме них НЕЛЬЗЯ. Если поле содержит слово 'State', то в комментарии добавляй слово 'состояние' с нужным контекстом. Также и для методов, пиши 'метод' и объясняй. НИЧЕГО НЕ ДОБАВЛЯЙ КРОМЕ КОММЕНТАРИЕВ. Не переписывай уже написанный код, не добавляй ничего кромее комментариев, это крайне важно. Если видишь конструктор - пиши Конструктор [Название конструктора в таких квадратных скобках]. Если видишь комментарии, то не трогай их и просто пропускай строку(НИЧЕГО ДОПОЛНИТЕЛЬНО НЕ ПИШИ ЗДЕСЬ). Также не пиши комментарии для override методов.",
+      "issues": "Просмотри выделенный код на наличие ошибок, проблем, ошибок памяти, неправильных архитектуных решений и т.д. Постарайся объяснить мне ошибки и исправь код в лучшую сторону, не удаляй никакой код.",
+      "explain": "Просмотри выделенный код и объясни максимально подробно и с примерами что происходит в нем. Используй русский язык и как можно более глубоко объясни что там происходит.",
+      "smells": "Просмотри выделенный код и проверь на наличие/отсутсвие 'запахов кода'. Интересны архитектурные решения и другие с точки зрения архитектуры. Постарайся максимально подробно рассказать про проблемы, на русском языке.",
+      "localization": "Просмотри выделенный код и вынеси все строки в локализацию, больше ничего не меняй. Для локализации используй wm.localizations.yourValue, где yourValue - название переменной. Также в добавь комментарии, в которых ты оставил выделенные строки, чтобы я их мог потом использовать"
+    },
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "Wscats.eno"
+    },
+    "accessibility.voice.speechLanguage": "ru-RU",
+    "terminal.integrated.localEchoStyle": "dim",
+    "cSpell.language": "en,ru",
+    "cSpell.useGitignore": true,
+    "cSpell.ignoreWords": [
+      "Flushbar",
+      "lekvapteke",
+      "Gruvbox",
+      "fluttertoast",
+      "nerdtree",
+      "vsync"
+    ],
+    "cSpell.userWords": [
+      "appbar",
+      "Appmetrica",
+      "apteka",
+      "ARGB",
+      "autofocus",
+      "aвторизации",
+      "buildable",
+      "Clusterable",
+      "Clusterized",
+      "Codegen",
+      "cozyhome",
+      "Cupertino",
+      "Cyberdom",
+      "cyclomatic",
+      "Cypr",
+      "Cyprfaq",
+      "Cyprusfaq",
+      "Cтраница",
+      "Datas",
+      "datasource",
+      "dclouds",
+      "debouncer",
+      "dokterian",
+      "Dropzone",
+      "endtemplate",
+      "flutterdev",
+      "fullscreen",
+      "gapless",
+      "geolocator",
+      "geoobject",
+      "glsl",
+      "glslang",
+      "glsllint",
+      "Golos",
+      "hexcode",
+      "HTTTP",
+      "imgs",
+      "Inds",
+      "ipharmacy",
+      "isrgrootx",
+      "Jivo",
+      "jivosdk",
+      "lerp",
+      "listenables",
+      "LTRB",
+      "LTWH",
+      "mapkit",
+      "Meds",
+      "mirea",
+      "MMSS",
+      "mnns",
+      "mocktail",
+      "nodoc",
+      "objectbox",
+      "Octo",
+      "Placemark",
+      "Placemarks",
+      "Pokemons",
+      "prefs",
+      "Profi",
+      "profibonus",
+      "prudchenko",
+      "pubspec",
+      "Rebuilder",
+      "reentrantly",
+      "Roboto",
+      "rxdart",
+      "Segwit",
+      "setstate",
+      "smoothstep",
+      "sqflite",
+      "STREQUAL",
+      "Subtags",
+      "swiper",
+      "tostring",
+      "unawaited",
+      "usecase",
+      "utsname",
+      "webp",
+      "widgetbook",
+      "writeln",
+      "билд",
+      "билдер",
+      "бэка",
+      "вендора",
+      "вендоров",
+      "виджетом",
+      "геолокацией",
+      "геолокацию",
+      "геопозицию",
+      "Дебаг",
+      "дебага",
+      "ДИАЛРАПИД",
+      "капс",
+      "Клаcc",
+      "Колбек",
+      "Лейбл",
+      "Маппер",
+      "микросервиса",
+      "Нотификатор",
+      "отрисовку",
+      "переодичностью",
+      "Подроль",
+      "пролистывании",
+      "ребилда",
+      "роута",
+      "роутов",
+      "роуты",
+      "Свитчер",
+      "свитчера",
+      "скролла",
+      "срабатываемый",
+      "супп",
+      "таба",
+      "табов",
+      "фичи",
+      "Форматтер",
+      "чатики",
+      "шейдера",
+      "шиммера"
+    ],
+    "workbench.colorTheme": "Default Dark+",
+    "editor.minimap.size": "fit",
+    "editor.minimap.showSlider": "always",
+    "editor.minimap.enabled": false,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "workbench.editor.wrapTabs": true,
+    "git.replaceTagsWhenPull": true,
+    "flutter-plus.wraps": [
+      {
+        "name": "SliverToBoxAdapter",
+        "body": ["SliverToBoxAdapter(", " child: ${widget},", ")"]
+      },
+      {
+        "name": "AdaptiveRefreshCustomScrollView",
+        "body": [
+          "AdaptiveRefreshCustomScrollView(",
+          " slivers: [",
+          "  ${widget},",
+          " ],",
+          ")"
+        ]
+      },
+      {
+        "name": "GestureDetector",
+        "body": [
+          "GestureDetector(",
+          " onTap: ${1:onTap},",
+          " behavior: HitTestBehavior.opaque,",
+          "  child: ${widget},",
+          ")"
+        ]
+      },
+      {
+        "name": "SizedBox",
+        "body": ["SizedBox(", " height: ${1:height},", " child: ${widget},", ")"]
+      },
+      {
+        "name": "EntityStateNotifierBuilder",
+        "body": [
+          "EntityStateNotifierBuilder(",
+          " listenableEntityState: ${1:entityStateNotifier},",
+          "  builder: (context, ${2:state}Data) {",
+          "   final ${2:state} = ${2:state}Data;",
+          "   if (${2:state} == null) {",
+          "    return const SizedBox.shrink();",
+          "    }",
+          "   return ${widget};",
+          "  },",
+          ")"
+        ]
+      },
+      {
+        "name": "StateNotifierBuilder",
+        "body": [
+          "StateNotifierBuilder(",
+          " listenableState: ${1:stateNotifier},",
+          "  builder: (context, ${2:state}Data) {",
+          "   final ${2:state} = ${2:state}Data;",
+          "   if (${2:state} == null) {",
+          "    return const SizedBox.shrink();",
+          "   }",
+          "   return ${widget};",
+          "  },",
+          ")"
+        ]
+      },
+      {
+        "name": "ListenableBuilder",
+        "body": [
+          "ListenableBuilder(",
+          "  listenable: ${1:listenable},",
+          "  builder: (context, _) => ${widget},",
+          ")"
+        ]
+      },
+      {
+        "name": "ValueListenableBuilder",
+        "body": [
+          "ValueListenableBuilder(",
+          "  valueListenable: ${1:valueListenable},",
+          "  builder: (context, value, _) => ${widget},",
+          ")"
+        ]
+      },
+      {
+        "name": "RepaintBoundary",
+        "body": ["RepaintBoundary(", "  child: ${widget},", ")"]
+      },
+      {
+        "name": "SliverPadding",
+        "body": [
+          "SliverPadding(",
+          "  padding: const EdgeInsets.all(${1:8.0}),",
+          "  sliver: ${widget},",
+          ")"
+        ]
+      }
+    ],
+    "aider.openaiApiKey": "sk-svcacct-br_h7jKN0l7BLiCUoqiByXQWbAkKG4rso8YmQEIki5yb79XT7gfvronnRV1BWXlT3BlbkFJzJxRq78bw2yyc5YhFPThq5tbqbbNqvql0cZdJJmRWZKTA38QL7MTnaQZZ1FPEqgA",
+    "gitlens.plusFeatures.enabled": false,
+    "editor.codeActionsOnSave": {},
+    "editor.inlayHints.enabled": "off",
+    "gitlab.duoCodeSuggestions.enabled": false,
+    "github.copilot.advanced": {
+      "authProvider": "github"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "merge-conflict.autoNavigateNextConflict.enabled": true,
+    "dart.lineLength": 120,
+    "cmake.showOptionsMovedNotification": false,
+    "cmake.pinnedCommands": [
+      "workbench.action.tasks.configureTaskRunner",
+      "workbench.action.tasks.runTask"
+    ],
+    "editor.formatOnSave": true,
+    "workbench.editor.enablePreview": false,
+    "window.zoomLevel": 0.1,
+    "update.showReleaseNotes": false,
+  }
